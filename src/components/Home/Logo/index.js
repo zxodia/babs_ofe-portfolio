@@ -1,6 +1,4 @@
 import { useEffect, useRef } from 'react'
-import gsap from 'gsap-trial'
-import { MotionPathPlugin } from "gsap-trial/MotionPathPlugin";
 import LogoS from '../../../assets/images/logo-s.png'
 import './index.scss'
 
