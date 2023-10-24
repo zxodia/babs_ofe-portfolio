@@ -9,32 +9,32 @@ const Logo = () => {
   const outlineLogoRef = useRef()
   const solidLogoRef = useRef()
 
-  useEffect(() => {
-    gsap.registerPlugin(MotionPathPlugin)
+  // useEffect(() => {
+  //   gsap.registerPlugin(MotionPathPlugin)
 
-    gsap
-      .timeline()
-      .to(bgRef.current, {
-        duration: 1,
-        opacity: 1,
-      })
-      .from(outlineLogoRef.current, {
-        drawSVG: 0,
-        duration: 22,
-      })
+  //   gsap
+  //     .timeline()
+  //     .to(bgRef.current, {
+  //       duration: 1,
+  //       opacity: 1,
+  //     })
+  //     .from(outlineLogoRef.current, {
+  //       drawSVG: 0,
+  //       duration: 22,
+  //     })
 
-    gsap.fromTo(
-      solidLogoRef.current,
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        delay: 4,
-        duration: 4,
-      }
-    )
-  }, [])
+  //   gsap.fromTo(
+  //     solidLogoRef.current,
+  //     {
+  //       opacity: 0,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       delay: 4,
+  //       duration: 4,
+  //     }
+  //   )
+  // }, [])
 
   return (
     <div className="logo-container" ref={bgRef}>
